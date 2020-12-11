@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node src/server.js",
-    "dev": "nodemon src/server.js",
+    "start": "node src/shopping-list-service.js",
     "predeploy": "npm audit",
     "deploy": "git push heroku main",
     "test": "mocha --require test/setup.js"
@@ -18,7 +17,9 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "helmet": "^4.2.0",
-    "morgan": "^1.10.0"
+    "knex": "^0.21.12",
+    "morgan": "^1.10.0",
+    "pg": "^8.5.1"
   },
   "devDependencies": {
     "chai": "^4.2.0",
